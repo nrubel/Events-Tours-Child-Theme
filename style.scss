@@ -1,0 +1,985 @@
+/*
+Theme Name: Ticketchai Events - Child
+Theme URI: http://nasiruddin.com/ticketchai-events/v2
+Author: Nasir Uddin
+Author URI: http://www.nasiruddin.com
+Description: Version 2 Design
+Version: 2.0 Beta
+Template: tcevents
+Text Domain: tcevents
+
+Version 2:
+* Tour Comparing
+* Filter by price
+* Featured / Priority on Compare
+* Modify Functions.php file
+*/
+
+// Fonts
+@font-face {
+    font-family: "geoRegular";
+    src: url(fonts/Geomanist-Regular.otf);
+}
+@font-face {
+    font-family: "geoBook";
+    src: url(fonts/Geomanist-Book.otf);
+}
+@font-face {
+    font-family: "geoLight";
+    src: url(fonts/Geomanist-Light.otf);
+}
+@font-face {
+    font-family: "konghso";
+    src: url(fonts/KongshoMJ.ttf);
+}
+@font-face {
+    font-family: "konghsoBold";
+    src: url(fonts/KongshoMJ-Bold.ttf);
+}
+
+
+$red: #F91B37;
+$d1: #3E405A;
+$d2: #808A97;
+$d3: #535650;
+$d4: #B1BCCA;
+
+$fb: #324D8F;
+$tw: #46A1EE;
+$gp: #DA4334;
+$ins: #992385;
+
+*{
+    font-family: "geoLight";
+}
+
+.w-90{
+    width: 90%;
+}
+
+
+// Header
+.home{
+    .tce-navbar{
+        background: #ffffff;
+        .container, .navbar-brand, .hotline, .navbar-nav{
+            filter: none;
+            a{
+                color: $d1;
+            }
+        }
+    }
+}
+
+.tce-navbar {
+    padding: 25px 0;
+    background: #ffffff;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06);
+    .navbar-collapse {
+        line-height: 37px;
+        @media (max-width: 991px) {
+            display: none !important;
+        }
+        @media (min-width: 768px) {
+            flex-basis: 100%;
+            justify-content: space-between;
+        }
+        .navbar-nav {
+            .nav-item{
+                @media (max-width: 1199px) {
+                    margin-left: 15px;
+                }
+                .nav-link{
+                    color: $d1;
+                }
+                &:last-of-type{
+                    .nav-link{
+                        padding: 0 29px;
+                        border: 1px solid $d4;
+                        border-radius: 3px;
+                        line-height: 35px;
+                        @media (max-width: 1199px) {
+                            padding: 0 18px;
+                        }
+                        &:hover,&:focus{
+                            border-color: $red;
+                        }
+                    }
+                }
+            }
+        }
+
+        .tc-services-menu{
+            display: inline-flex;
+            a{
+                margin-left: 30px;
+                line-height: 37px;
+                color: $d1;
+                display: inline-flex;
+                align-items: center;
+                @media (max-width: 1199px) {
+                    margin-left: 15px;
+                }
+                img{
+                    margin-right: 10px;
+                    margin-top: -5px;
+                    @media (max-width: 1199px) {
+                        margin-right: 7px;
+                    }
+                }
+                &:hover,&:focus{
+                    color: $red;
+                }
+            }
+        }
+    }
+
+    .hotline svg {
+        margin-right: 7px;
+        margin-top: 8px;
+    }
+
+    .navbar-brand{
+        line-height: 37px;
+        padding: 0;
+        @media (min-width: 992px) {
+            margin-top: -12px;
+        }
+    }
+}
+
+.wrapper-navbar{
+    padding-top: 87px;
+}
+
+.home .wrapper-navbar.fixed .tce-navbar{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06);
+}
+
+#mmmenu-btn{
+    border: none;
+    background: none;
+    padding: 0;
+    img{
+        width: 25px;
+    }
+}
+
+// Tours Grid Block
+.tours-grid-block{
+    padding-top: 55px;
+    padding-bottom: 60px;
+}
+
+.tours-grid-item{
+    margin-bottom: 30px;
+    display: inline-flex;
+    .event-post-on-loop{
+        width: 100%;
+    }
+}
+
+.event-post-on-loop{
+    border: 1px solid #E3E8F0;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.08);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: #ffffff;
+    p{
+        strong{
+            font-family: "geoBook";
+        }
+    }
+    .card-body{
+        background: #ffffff;
+    }
+    &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: 18px;
+        right: 18px;
+        bottom: 0;
+        transition: all 300ms linear;
+        z-index: -1;
+    }
+
+    &:hover,&:focus{
+        &:before{
+            background: #FFFFFF;
+            border: 1px solid #FFB7B7;
+            box-shadow: 0 3px 31px 0 rgba(47,30,30,0.18);
+            border-radius: 5px;
+        }
+    }
+}
+
+// Testimonials
+.testimonials-blocks{
+    background: #FAFCFD;
+    padding-bottom: 60px;
+
+    .container{
+        position: relative;
+        &:before{
+            content: '';
+            width: 59px;
+            height: 57px;
+            background: url('images/quote.png') no-repeat scroll 0 0;
+            display: block;
+            -webkit-background-size: cover;
+            background-size: cover;
+            position: absolute;
+            top: -25px;
+            left: 5px;
+        }
+    }
+    .tb-title{
+        margin-bottom: 40px;
+        margin-top: 50px;
+        font-size: 24px;
+        color: $d2;
+    }
+}
+
+.testimonial-block{
+    display: inline-flex;
+    margin-bottom: 30px;
+    .card{
+        background: #FFFFFF;
+        border: 1px solid #E3E8F0;
+        border-radius: 5px;
+        padding: 27px 45px 27px 30px;
+        color: $d2;
+        font-size: 18px;
+        line-height: 28px;
+        .card-body, .card-footer{
+            background: none;
+            border: none;
+            padding: 0;
+        }
+        .card-body{
+            padding-bottom: 20px;
+
+        }
+
+        .media {
+            img{
+                margin-right: 15px;
+            }
+            h5,h6{
+                margin: 0;
+            }
+            h5{
+                font-family: "geoBook";
+                font-size: 14px;
+                line-height: 28px;
+            }
+            h6{
+                font-size: 12px;
+                line-height: 1.3;
+            }
+        }
+
+        &:hover, &:focus{
+            border: 1px solid #FFB7B7;
+        }
+    }
+}
+
+// Features Block
+.feature-blocks{
+    background: #FAFCFD;
+    padding: 70px 0;
+    .tc-h1-st{
+        font-family: "geoBook";
+    }
+    .btn{
+        padding: 0;
+        position: relative;
+        z-index: 2;
+        border: none;
+        border-radius: 5px;
+        span{
+            background: $red;
+            padding: 0 40px;
+            line-height: 65px;
+            display: block;
+            transition: all 300ms linear;
+            border-radius: 5px;
+        }
+        &:before{
+            content: '';
+            background: #F91B37;
+            box-shadow: 0 0 24px 0 rgba(152,19,19,0.50);
+            border-radius: 5px;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 18px;
+            right: 18px;
+            top: 20px;
+            z-index: -1;
+            transition: all 300ms linear;
+        }
+        &:hover,&:focus{
+            span{
+                background: $d1;
+            }
+            &:before{
+                opacity: 0;
+            }
+        }
+    }
+}
+
+.fblock p{
+    font-size: 20px;
+}
+
+.fb-icon-block{
+    width: 159px;
+    height: 159px;
+    line-height: 148px;
+    border-width: 4px;
+}
+// Carousel
+.owl-carousel {
+    .owl-stage{
+        display: flex;
+    }
+    .owl-item, .item{
+        display: inline-flex;
+    }
+
+    .item{
+        width: 100%;
+        .card{
+            width: 100%;
+        }
+    }
+}
+
+// Footer
+.tce-footer{
+    padding-bottom: 30px;
+    border-top: 1px solid #d2d8e1;
+    background: #F9FBFD;
+    @media (max-width: 991px) {
+        padding-bottom: 0;
+    }
+    .container{
+        .foot-conts{
+            border-bottom: 1px solid #ececec;
+            padding-top: 35px;
+            padding-bottom: 30px;
+            color: $d2;
+            a{
+                color: $d2;
+            }
+        }
+
+        .foot-div{
+            padding: 0 15px;
+            @media (max-width: 991px){
+                display: flex;
+                justify-content: center;
+
+                a{
+                    font-size: 18px;
+                    &.go-top{
+                        margin-bottom: 20px;
+                        img{
+                            margin-right: 17px;
+                        }
+                    }
+                }
+
+                &.foot-menu{
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #e3edf2;
+                    a{
+                        line-height: 34px;
+                    }
+                }
+                &.social-links-menu{
+                    padding-top: 22px;
+                    padding-bottom: 28px;
+                    line-height: 50px;
+                    font-size: 15px;
+                    a{
+                        font-size: 25px;
+                        line-height: 50px;
+                    }
+                }
+
+                &.copyright-texts{
+                    font-size: 14px;
+                    flex-direction: column;
+                    padding-top: 25px;
+                    border-top: 1px solid #d2d8e1;
+                    span{
+                        justify-content: center;
+                    }
+                    a{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.social-links-menu{
+    line-height: 1;
+    display: inline-flex;
+    flex-direction: row;
+    a{
+        width: auto;
+        height: auto;
+        margin-right: 10px;
+        background: none;
+        line-height: 1;
+        i{
+            transition: all 300ms linear;
+        }
+        .fa-facebook{
+            color: $fb;
+        }
+        .fa-twitter{
+            color: $tw;
+        }
+        .fa-google-plus{
+            color: $gp;
+        }
+        .fa-instagram{
+            color: $ins;
+        }
+        &:hover,&:focus{
+            background: none;
+            i{
+                color: $d1;
+            }
+        }
+    }
+}
+
+.foot-menu{
+    a{
+        margin-left: 22px;
+        display: inline-flex;
+        &:first-of-type{
+            margin-left: 0;
+        }
+    }
+}
+
+// Featured On
+.featured-on{
+    font-size: 24px;
+    color: $d2;
+    padding: 65px 0;
+
+    .award-icon{
+        margin-left: -10px;
+        margin-right: 15px;
+        @media (max-width: 991px) {
+            margin: 0;
+        }
+    }
+}
+
+.featured-on-title{
+    @media (max-width: 991px) {
+        margin-bottom: 20px;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.featured-on-logo{
+    @media (max-width: 767px) {
+        flex-basis: calc(100% / 3);
+        margin-bottom: 15px;
+    }
+}
+
+// Video
+.nk-awb{
+    width: 100%;
+    height: 100vh;
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+// blog lists
+.blog-shop{
+    .blog-title-icon{
+        width: 46px;
+        margin-bottom: 26px;
+    }
+    .carousel-title{
+        color: $d2;
+        margin-bottom: 40px;
+        font-family: "geoLight";
+        strong{
+            font-family: "geoBook";
+        }
+        a{
+            font-family: "geoLight";
+        }
+    }
+}
+
+.blog-list{
+    background: url('images/blog-bg.jpg') no-repeat fixed 0 0 $red;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 110px;
+    .blog-title-icon{
+        filter: brightness(0) invert(1);
+    }
+
+    .carousel-title{
+        filter: brightness(0) invert(1);
+    }
+}
+
+.blog-list-item{
+    display: inline-flex;
+
+    .card-header, .card-body, .card-footer{
+        background: none;
+        border: none;
+        padding: 0;
+    }
+    .card{
+        background: #FFFFFF;
+        border: 1px solid #E3E8F0;
+        box-shadow: 0 0 8px 0 rgba(0,0,0,0.08);
+        border-radius: 5px;
+        padding: 35px 30px;
+        width: 100%;
+        margin-bottom: 30px;
+        &:hover, &:focus{
+            border-color: #FFB7B7;
+            .card-footer{
+                color: $red;
+            }
+        }
+    }
+
+    .card-header{
+        font-family: "geoLight";
+        margin-bottom: 15px;
+        color: $d2;
+        line-height: 1;
+    }
+
+    .card-body{
+        font-family: "konghso", "geoBook", sans-serif;
+        font-size: 22px;
+        line-height: 28px;
+        color: $d1;
+        margin-bottom: 15px;
+    }
+
+    .card-footer{
+        font-family: "geoLight";
+        color: $d1;
+        line-height: 1;
+        transition: all 300ms linear;
+    }
+}
+
+// Shop Categories
+.shop-cats{
+    padding-top: 65px;
+    padding-bottom: 40px;
+    background: #ffffff;
+}
+
+.shop-list-item{
+    display: inline-flex;
+    margin-bottom: 30px;
+    .card{
+        width: 100%;
+        border: none;
+        background: none;
+        &:hover,&:focus{
+            .card-footer{
+                color: $red;
+            }
+        }
+    }
+    .card-body, .card-footer{
+        background: none;
+        padding: 0;
+        border: none;
+        border-radius: 3px;
+        overflow: hidden;
+        img{
+            transform: scale(1.1);
+        }
+    }
+    .card-footer{
+        padding-top: 15px;
+        font-family: "geoLight";
+        color: $d1;
+        font-size: 22px;
+        transition: all 300ms linear;
+    }
+}
+
+// MMenu
+.mm-panel, .mm-panels{
+    font-size: 18px;
+    background: #FAFCFD;
+    padding: 20px 40px;
+    @media (max-width: 424px) {
+        padding: 20px;
+        font-size: 16px;
+    }
+    a{
+        display: block;
+        color: $d1;
+        padding: 6px 0;
+        &:nth-of-type(4){
+            margin-bottom: 20px;
+        }
+        &:last-of-type{
+            padding: 0 29px;
+            border: 1px solid $d4;
+            border-radius: 3px;
+            line-height: 35px;
+            text-align: center;
+            margin-top: 50px;
+        }
+    }
+
+    a.top-mm{
+        font-family: "geoBook";
+        img{
+            float: right;
+            width: 25px;
+            margin-left: 15px;
+        }
+    }
+
+    a.hotline{
+        svg{
+            float: left;
+            margin-right: 10px;
+        }
+        span, svg{
+            color: $red;
+        }
+        &:hover,&:focus{
+            color: $red;
+        }
+    }
+}
+
+.spinner {
+    margin: 100px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    text-align: center;
+
+    -webkit-animation: sk-rotate 2.0s infinite linear;
+    animation: sk-rotate 2.0s infinite linear;
+}
+
+.dot1, .dot2 {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background-color: $red;
+    border-radius: 100%;
+
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.dot2 {
+    top: auto;
+    bottom: 0;
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
+@keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+
+@-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+    0%, 100% { 
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    } 50% { 
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+
+// Air Ticket Template
+.page-template-air-tickets{
+    background: #FAFCFD;
+}
+.air-ticket-template{
+    background: #FAFCFD;
+    .att-inner{
+        min-height: calc(100vh - 200px);
+        padding: 50px 0;
+        h2{
+            color: $d1;
+            font-family: "geoBook";
+            margin-top: 22px;
+            margin-bottom: 13px;
+            font-size: 24px;
+        }
+        h3{
+            color: $red;
+            font-family: "geoBook";
+            margin-bottom: 65px;
+            font-size: 20px;
+            letter-spacing: 7px;
+            text-transform: uppercase;
+            @media (max-width: 424px) {
+                margin-bottom: 25px;
+            }
+        }
+        .nav{
+            @media (max-width: 424px) {
+                flex-direction: column;
+                text-align: center;
+            }
+            li{
+                a{
+                    text-decoration: underline;
+                    padding: 0 15px;
+                    text-transform: capitalize;
+                    font-size: 16px;
+                    @media (max-width: 767px) {
+                        padding: 0 10px;
+                    }
+                    @media (max-width: 424px) {
+
+                    }
+                    &:hover,&:focus{
+                        color: $d1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Loop Style
+.event-post-on-loop, .event-fimage, .compare-tour .card-img-top{
+    position: relative;
+    .thumbnail-photo-frame{
+        position: absolute;
+        top: 3.4%;
+        right: 2.263%;
+        left: 2.263%;
+        bottom: 0;
+
+        .photo-frame-logo{
+            width: 18%;
+            position: absolute;
+            right: 0;
+            top: -1%;
+        }
+        .top-border{
+            height: 0.62%;
+            background: #ffffff;
+            opacity: 0.77;
+            position: absolute;
+            left: 0;
+            right: 19%;
+            top: 0;
+        }
+        &:before,&:after{
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -1px;
+            opacity: 0.6;
+            width: 0.6%;
+            background: #ffffff;
+        }
+        &:before{
+            left: 0;
+            top: 0.70%;
+        }
+        &:after{
+            top: 8%;
+            right: 0;
+        }
+    }
+
+    .hot-deal{
+        width: 30%;
+        position: absolute;
+        left: -0.25%;
+        bottom: 5%;
+        color: #ffffff;
+        transition: all 300ms linear 0s;
+        [class^="hot-deal-"]{
+            position: absolute;
+            font-family: "geoBook";
+            left: 9px;
+            right: 6px;
+            text-align: center;
+        }
+
+        .hot-deal-text{
+            font-size: 13px;
+            letter-spacing: 1px;
+            top: 11px;
+            text-transform: uppercase;
+        }
+
+        .hot-deal-price{
+            font-size: 10px;
+            right: 20px;
+            bottom: 0;
+            span{
+                font-family: "konghsoBold";
+                font-size: 9px;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+
+.event-post-on-loop{
+
+    &:hover,&:focus{
+        .hot-deal{
+            bottom: 20%;
+        }
+    }
+}
+
+.event-fimage, .compare-tour{
+
+    .hot-deal{
+        left: -0.23%;
+        [class^="hot-deal-"]{
+            left: 19px;
+            right: 12px;
+        }
+
+        .hot-deal-text{
+            font-size: 24px;
+            top: 19px;
+        }
+
+        .hot-deal-price{
+            font-size: 18px;
+            right: 38px;
+            span{
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.event-schedule-list{
+    margin-bottom: 30px;
+}
+
+.bottom-tab-trigs{
+    margin-bottom: 100px;
+    display: inline-flex;
+    align-items: center;
+
+    li{
+        display: inline-flex;
+        &:first-child{
+            &:after{
+                content: '';
+                background: #fff0f0;
+                width: 10px;
+                height: 10px;
+                border-radius: 100%;
+                margin: 4px 30px;
+            }
+        }
+    }
+
+    a{
+        display: inline-flex;
+        align-items: center;
+        font-family: "geoRegular";
+        font-size: 18px;
+        color: #515151;
+        line-height: 1;
+        span, img{
+            float: left;
+        }
+        span{
+            text-decoration: underline;
+        }
+        .next-day-icon{
+            margin-left: 16px;
+        }
+        .prev-day-icon{
+            margin-right: 16px;
+        }
+    }
+}
+
+// Compare
+.compare-tour-section{
+    min-height: calc(100vh - 240px);
+}
+.tour-compare-title{
+    font-family: "geoBook";
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+.compare-tour{
+    margin-bottom: 40px;
+    .card-img-top{
+        width: 370px;
+        height: 270px;
+        margin-right: 40px;
+        flex: 0 0 auto;
+        border-radius: 0;
+        overflow: hidden;
+        background-size: cover;
+
+        .btn{
+            position: absolute;
+            border-radius: 0;
+            bottom: -60px;
+            line-height: 50px;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    &:hover,&:focus{
+        .card-img-top{
+            .btn{
+                bottom: 0;
+            }
+        }
+        .hot-deal{
+            bottom: 22%;
+        }
+    }
+}

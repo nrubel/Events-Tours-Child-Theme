@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="37px" viewBox="10 8 39 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>“</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M328.103636,6.6756238 C324.841802,7.29110992 322.549098,9.65832873 321.225455,13.7773512 C320.563633,15.81319 320.232727,17.825326 320.232727,19.8138196 C320.232727,20.050545 320.244545,20.2517586 320.268182,20.4174664 C320.291818,20.5831742 320.327272,20.9500931 320.374545,21.5182342 L328.103636,21.5182342 L328.103636,37 L313,37 L313,22.7255278 C313,15.718455 314.394532,10.3211962 317.183636,6.53358925 C319.972741,2.74598234 323.612705,0.568141036 328.103636,0 L328.103636,6.6756238 Z M352,6.6756238 C349.399987,7.10172958 347.42637,8.56940524 346.079091,11.0786948 C344.731811,13.5879844 344.058182,16.4759913 344.058182,19.7428023 C344.058182,20.0268728 344.07,20.3109391 344.093636,20.5950096 C344.117273,20.8790801 344.176363,21.1868186 344.270909,21.5182342 L352,21.5182342 L352,37 L336.825455,37 L336.825455,22.7255278 C336.825455,17.0914626 338.007261,12.0611226 340.370909,7.63435701 C342.734557,3.20759143 346.610882,0.662831209 352,0 L352,6.6756238 Z" id="path-1"></path>
+        <filter x="-41.0%" y="-37.8%" width="182.1%" height="186.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.706518308   0 0 0 0 0.706518308  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="01.-Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-303.000000, -1536.000000)">
+        <g id="What-people-are-saying.." transform="translate(0.000000, 1544.000000)">
+            <g id="“">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#F91B37" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

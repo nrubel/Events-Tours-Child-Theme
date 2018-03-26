@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="63px" height="64px" viewBox="0 0 63 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>shopping-cart</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-45.0%" y="-40.0%" width="190.0%" height="190.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.706518308   0 0 0 0 0.706518308  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="01.-Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-302.000000, -3885.000000)" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Shop-by-Category" transform="translate(313.000000, 3895.000000)" stroke="#F91B37" stroke-width="3.63636364">
+            <g id="shopping-cart" filter="url(#filter-1)">
+                <circle id="Oval" cx="12.7272727" cy="36.3636364" r="3.63636364"></circle>
+                <circle id="Oval" cx="34.5454545" cy="36.3636364" r="3.63636364"></circle>
+                <path d="M8.49090909,9.09090909 L40,9.09090909 L36.9454545,24.3454545 C36.6022964,26.0731483 35.070211,27.306477 33.3090909,27.2727273 L14.0909091,27.2727273 C12.2536026,27.2883106 10.6933378,25.9308802 10.4545455,24.1090909 L7.69090909,3.16363636 C7.45385861,1.35562886 5.91438831,0.00276101355 4.09090909,0 L0,0" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

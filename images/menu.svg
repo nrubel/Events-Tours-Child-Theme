@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="14px" viewBox="0 0 20 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>menu</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-316.000000, -29.000000)" stroke-linecap="round" stroke-linejoin="round">
+        <g id="menu" transform="translate(317.000000, 30.000000)" stroke="#3E405A" stroke-width="2">
+            <path d="M0,6 L18,6" id="Shape"></path>
+            <path d="M0,0 L18,0" id="Shape"></path>
+            <path d="M0,12 L18,12" id="Shape"></path>
+        </g>
+    </g>
+</svg>

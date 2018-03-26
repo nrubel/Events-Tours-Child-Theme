@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="143px" height="214px" viewBox="0 0 143 214" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FD3B67" offset="0%"></stop>
+            <stop stop-color="#FF153F" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="02.-Air---coming-soon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-827.000000, -259.000000)">
+        <g id="kaleb-nimz-904" transform="translate(-6.000000, 44.000000)">
+            <g id="Group-5" transform="translate(833.000000, 215.000000)">
+                <path d="M143,105 L143,90 L82.7894737,52.5 L82.7894737,11.25 C82.7894737,5.025 77.7468421,0 71.5,0 C65.2531579,0 60.2105263,5.025 60.2105263,11.25 L60.2105263,52.5 L0,90 L0,105 L60.2105263,86.25 L60.2105263,127.5 L45.1578947,138.75 L45.1578947,150 L71.5,142.5 L97.8421053,150 L97.8421053,138.75 L82.7894737,127.5 L82.7894737,86.25 L143,105 Z" id="Shape" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+                <path d="M71.5,168.5 L71.5,212.511362" id="Line-2" stroke="#F91B37" stroke-linecap="square"></path>
+                <path d="M90.5,165.322222 L90.5,193.6851" id="Line-2-Copy" stroke="#F91B37" stroke-linecap="square"></path>
+                <path d="M52.5,165.322222 L52.5,193.6851" id="Line-2-Copy-2" stroke="#F91B37" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

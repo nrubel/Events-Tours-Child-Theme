@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="20px" viewBox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle Copy 8</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="87.8476557%" y1="100%" x2="6.93968161%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#FF3463" offset="0%"></stop>
+            <stop stop-color="#F91B37" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="01.-Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-314.000000, -613.000000)">
+        <g id="Group-7" transform="translate(223.000000, 608.000000)" fill="url(#linearGradient-1)">
+            <path d="M91,5 L91,5 C96.2803833,5 100.56098,9.28059642 100.56098,14.5609797 L100.56098,18.7364274 L100.56098,20.1116576 L100.56098,21.5821379 C100.56098,22.9823367 101.609322,24.1607391 103,24.3237488 C102.607218,24.5574617 102.202937,24.7296524 101.787159,24.8403208 C101.376415,24.9496495 100.967347,25.0028371 100.559956,24.9998835 L100.559956,24.9998835 C95.2801381,24.9998835 91,20.7197454 91,15.4399274 L91,5 Z" id="Rectangle-Copy-8"></path>
+        </g>
+    </g>
+</svg>
